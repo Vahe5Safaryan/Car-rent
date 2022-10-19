@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car|Rental</title>
+
+        <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap -->
+    <link href="css/animate.css" rel="stylesheet">
+
+        <!-- Plugin Styles -->
+    <link href="css/datepicker.css" rel="stylesheet">
+
+    <link href="css/select2.css" rel="stylesheet">
+
+        <!-- Main Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+
+        <!-- SLIDER CSS -->
+    <!-- <link href="css/RV-gallery.css" rel="stylesheet"> -->
+
+        <!-- ICON -->
+    <link href="icon/css/icons.css" rel="stylesheet">
+    
+        <!-- Google Font Lato -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!-- font for icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    <!-- JQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <!-- for select -->
+     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+</head>
+<!-- <body id="top" data-spy="scroll" data-target=".navbar" data-offset="260"> -->
+
+  <!-- Header start -->
+<header data-spy="affix" data-offset-top="39" data-offset-bottom="0" class="large">
+
+    <div class="row container box">
+          <div class="col-md-5">
+              <!-- Logo start -->
+              <div class="brand">
+                  <h1><a class="scroll-to" href="#"><img class="img-responsive" src="img/logo/logoo.png" alt="logo"></a></h1>
+              </div>
+              <!-- Logo end -->
+          </div>
+
+          <div class="col-md-7">
+            <div class="pull-right">
+                  <div class="header-info pull-right">
+                      <!-- <div class="contact pull-left">CONTACT: (000) 000-000-00</div> -->
+                      <!-- Language Switch start -->
+                      <div class="language-switch pull-right">
+                          <div class="dropdown">
+                              <a data-toggle="dropdown" href="index.php.html#" id="language-switch-dropdown">Language </a>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="language-switch-dropdown">
+                                  <li><a href="index.php.html#"><img src="img/flags/United-States.png" alt="usa"> English</a></li>
+                                  <li><a href="index.php.html#"><img src="img/flags/Germany.png" alt="germany"> German</a></li>
+                                  <li><a href="index.php.html#"><img src="img/flags/France.png" alt="france"> French</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Language Switch end -->
+                  </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <!-- start navigation -->
+              <nav class="navbar navbar-default" role="navigation">
+                  <div class="container-fluid">
+                      <!-- Toggle get grouped for better mobile display -->
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand scroll-t" href="#"><img class="img-responsive" src="img/logo/logoo.png" alt="logo"></a>
+                      </div>
+                      <!-- Collect the nav links, for toggling -->
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <!-- Nav-Links start -->
+                          <ul class="nav navbar-nav navbar-right">
+                              <li class="active"><a href="index.php.html#top" class="scroll-to">Home</a></li>
+                              <li><a href="index.php.html#services" class="scroll-to">About Us</a></li>
+                              <li><a href="index.php.html#vehicles" class="scroll-to">Contact</a></li>
+                              <li><a href="index.php.html#contact" class="scroll-to">All Cars</a></li>
+                          </ul>
+                          <!-- Nav-Links end -->
+                      </div>
+
+                  </div>
+              </nav>
+              <!-- end navigation -->
+          </div>
+    </div>
+</header>
+  <!-- Header end -->
+
+<!-- TOP HEADER -->
+
+
+<div class="top-header">
+    <div class="header-img" style="background-image: url(img/bg/car-0023.jpg); ">
+        <h1>Listings Car</h1>
+        <div class="header-img-text-line"></div>
+    </div>
+</div>
+
+
+<!--  ADD CAR ----- -->
+
+<div class="section-block">
+    <div class="container">
+        <div class="add-car-box">
+            <div class="row">
+                <form action="#" method="post" name="select-form" id="car_add_form">
+
+                     <div class="col-lg-4 col-md-4 col-12">
+                        <div class="select-car-box">
+                            <h5>Per day - $</h5>
+                           <input type="number" class="required" id="myInp" name="text" placeholder="per day">
+                       </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="select-car-box">
+                            <h5>Daily discounts - $</h5>
+                           <input type="number" name="text" placeholder="Daily discounts">
+                       </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="select-car-box">
+                            <h5>Monthly discounts - $</h5>
+                           <input type="number" name="text" placeholder="Monthly discounts">
+                       </div>
+                    </div>
+
+                    <!-- car -->
+                    <div class="col-lg-4 col-md-4 col-12">  
+                        <div class="select-car-box">
+                            <h5>Make <span>*</span></h5>
+                            <select class="js-select required" name="select-form" >
+                                <option disabled="disabled"  selected="selected" value="0">Make</option>
+                                <option value="1">Audi</option>
+                                <option value="2">BMW</option>
+                                <option value="3">Ford</option>
+                                <option value="4">Mercedes-Benz</option>
+                                <option value="5">Opel</option>
+                                <option value="6">Volkswagen</option>
+                                <option value="7">9ff</option>
+                                <option value="8">Abarth</option>
+                                <option value="9">AC</option>
+                                <option value="10">ACM</option>
+                                <option value="11">Acura</option>
+                                <option value="12">Aixam</option>
+                                <option value="13">Alfa Romeo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="select-car-box">
+                            <h5>Model <span>*</span></h5>
+                            <select class="js-select required" name="select-form">
+                                <option disabled="disabled" selected="selected" value="0">Model</option>
+                                <option value="182">114</option>
+                                <option value="163">116</option>
+                                <option value="164">118</option>
+                                <option value="165">120</option>
+                                <option value="172">123</option>
+                                <option value="174">125</option>
+                                <option value="168">130</option>
+                                <option value="173">135</option>
+                                <option value="210">140</option>
+                                <option value="180">1er M Coupé</option>
+                                <option value="149">2002</option>
+                                <option value="203">214</option>
+                                <option value="199">216</option>
+                                <option value="193">218</option>
+                                <option value="192">220</option>
+                                <option value="194">225</option>
+                                <option value="202">228</option>
+                                <option value="211">230</option>
+                                <option value="195">235 </option>
+                                <option value="212">240</option>
+                                <option value="156">315</option>
+                                <option value="119">316</option>
+                                <option value="120">318</option>
+                                <option value="121">320</option>
+                                <option value="122">323</option>
+                                <option value="123">324</option>
+                                <option value="124">325</option>
+                                <option value="125">328</option>
+                                <option value="150">330</option>
+                                <option value="171">335</option>
+                                <option value="205">340</option>
+                                <option value="200">418</option>
+                                <option value="189">420</option>
+                                <option value="201">425</option>
+                                <option value="187">428</option>
+                                <option value="196">430</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="select-car-box">
+                            <h5>Production date <span>*</span></h5>
+                            <select class="js-select required" name="select-form" >
+                                <option disabled="disabled" selected="selected" value="0">Year</option>
+                                <option value="2018">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Mail -->
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="select-car-box">
+                            <h5>Daily Mileage Limit <span>*</span></h5>
+                           <input type="text" class="required" name="text" placeholder="min 250">
+                       </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="select-car-box">
+                            <h5>Mileage <span>*</span> </h5>
+                           <input type="text" class="required" name="text" placeholder="25000">
+                       </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="select-car-box">
+                            <h5>Vin <span>*</span></h5>
+                           <input type="text" class="required" name="text" placeholder="8ZPB4AAADG963751">
+                       </div>
+                    </div>
+
+
+                    <!-- Car Number -->
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="select-car-box">
+                            <h5>Plate Number <span>*</span></h5>
+                           <input type="text" class="required" name="text" placeholder="ABC39DE">
+                       </div>
+                    </div>
+                    <!-- Month -->
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="select-car-box">
+                            <h5>Month <span>*</span></h5>
+                            <select class="js-select required" name="car-select" >
+                                <option disabled="disabled" selected="selected" value="0">Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                       </div>
+                    </div>
+                    <!-- Day -->
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="select-car-box">
+                            <h5>Day <span>*</span></h5>
+                            <select class="js-select required" name="car-select" >
+                                <option disabled="disabled" selected="selected" value="0">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="15">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                       </div>
+                    </div>
+                    <!-- Year -->
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="select-car-box">
+                            <h5>Year <span>*</span></h5>
+                            <select class="js-select required" name="car-select" >
+                                <option disabled="disabled" selected="selected" value="0">Year</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                                <option value="1979">1979</option>
+                                <option value="1978">1978</option>
+                                <option value="1977">1977</option>
+                                <option value="1976">1976</option>
+                                <option value="1975">1975</option>
+                                <option value="1974">1974</option>
+                                <option value="1973">1973</option>
+                                <option value="1972">1972</option>
+                                <option value="1971">1971</option>
+                                <option value="1970">1970</option>
+                                <option value="1969">1969</option>
+                                <option value="1968">1968</option>
+                                <option value="1967">1967</option>
+                                <option value="1966">1966</option>
+                                <option value="1965">1965</option>
+                                <option value="1964">1964</option>
+                                <option value="1963">1963</option>
+                                <option value="1962">1962</option>
+                                <option value="1961">1961</option>
+                                <option value="1960">1960</option>
+                                <option value="1959">1959</option>
+                                <option value="1958">1958</option>
+                                <option value="1957">1957</option>
+                                <option value="1956">1956</option>
+                                <option value="1955">1955</option>
+                                <option value="1954">1954</option>
+                                <option value="1953">1953</option>
+                                <option value="1952">1952</option>
+                                <option value="1951">1951</option>
+                                <option value="1950">1950</option>
+                                <option value="1949">1949</option>
+                                <option value="1948">1948</option>
+                                <option value="1947">1947</option>
+                                <option value="1946">1946</option>
+                                <option value="1945">1945</option>
+                                <option value="1944">1944</option>
+                                <option value="1943">1943</option>
+                                <option value="1942">1942</option>
+                                <option value="1941">1941</option>
+                                <option value="1940">1940</option>
+                            </select>
+                       </div>
+                    </div>
+
+
+                    <!-- Shtat -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="select-car-box">
+                            <h5>Shtat <span>*</span></h5>
+                            <select class="js-select required" name="car-select" >
+                                <option disabled="disabled" selected="selected" value="0">Shtat</option>
+                                <option value="2">Alaska</option>
+                                <option value="3">Arizona</option>
+                                <option value="4">Arkansas</option>
+                                <option value="5">Mercedes-Benz GLK</option>
+                                <option value="6">active</option>
+                                <option value="7">Colorado</option>
+                                <option value="8">Connecticut</option>
+                                <option value="9">Delaware</option>
+                                <option value="10">District</option>
+                                <option value="11">Florida</option>
+                                <option value="12">Georgia</option>
+                                <option value="13">Hawaii</option>
+                                <option value="14">Idaho</option>
+                                <option value="15">Illinois</option>
+                                <option value="16">Indiana</option>
+                                <option value="17">Iowa</option>
+                                <option value="18">Kansas</option>
+                                <option value="19">Kentucky</option>
+                                <option value="20">Louisiana</option>
+                                <option value="21">Maine</option>
+                                <option value="22">Maryland</option>
+                                <option value="23">Massachusetts</option>
+                                <option value="24">Michigan</option>
+                                <option value="25">Minnesota</option>
+                                <option value="26">Mississippi</option>
+                                <option value="27">Missouri</option>
+                                <option value="28">Montana</option>
+                                <option value="29">Nebraska</option>
+                                <option value="30">Nevada</option>
+                                <option value="31">New Hampshire</option>
+                                <option value="32">New Jersey</option>
+                                <option value="33">New Mexico</option>
+                                <option value="34">New York</option>
+                                <option value="35">North Carolina</option>
+                                <option value="36">North Dakota</option>
+                                <option value="37">Ohio</option>
+                                <option value="38">Oklahoma</option>
+                                <option value="39">Oregon</option>
+                                <option value="40">Pennsylvania</option>
+                                <option value="41">Rhode Island</option>
+                                <option value="42">South Carolina</option>
+                                <option value="43">South Dakota</option>
+                                <option value="44">Tennessee</option>
+                                <option value="45">Texas</option>
+                                <option value="46">Utah</option>
+                                <option value="47">Vermont</option>
+                                <option value="48">Virginia</option>
+                                <option value="49">Washington</option>
+                                <option value="50">West Virginia</option>
+                                <option value="51">Wisconsin</option>
+                                <option value="52">Wyoming</option>
+                            </select>
+                       </div>
+                    </div>
+
+                    <!-- address -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="select-car-box">
+                            <h5>Specific address <span>*</span></h5>
+                           <input type="text" class="required" name="text" placeholder="address">
+                       </div>
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="select-car-box">
+                            <h5>Phone <span>*</span></h5>
+                           <input type="number" name="text" class="required" placeholder="Phone">
+                       </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="select-car-box">
+                            <h5>Email <span>*</span></h5>
+                           <input type="email" name="text" class="required" placeholder="Email">
+                       </div>
+                    </div>
+
+
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="select-car-box">
+                            <h5>Additional text (You can leave blank) <span>*</span></h5>
+                           <textarea  name="text" placeholder="Additional text"></textarea>
+                       </div>
+                    </div>
+
+
+                    <div class="col-lg-7 col-md-7 col-12">
+                         <div class="add-statment-check statment-box mt-10">
+                            <h5>Add Images</h5>
+                            <div class="images">
+                                <div class="pic">
+                                   Add Img
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <div class="add-master-img mt-10">
+                            <h5>Your Image</h5>
+                            <input type='file' class="required" onchange="readURL(this);">
+                            <img id="blah_2" src="img/ico/images.jpg" alt="img" />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="submit-box mt-20">
+                            <input type="submit" value="Save">
+                            <div class="error_msg">Fill in all the fields</div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+         </div>
+    </div>
+</div>
+
+
+
+
+<!-- FOOTEER -->
+
+<div class="section-block-bg" style="background-image: url('img/bg/footer-bg-2.png')">
+    <div class="container">
+        <div class="row mb-50 mt-50">
+            <div class="footer-box">
+
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="footer-box-about">
+                        <img src="img/logo/logoo2.png">
+                        <div class="footer-about">
+                            <h4>About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <ul>
+                            <li><a href=""> <i class="icon-brand-facebook-square"></i> </a></li>
+                            <li><a href=""> <i class="icon-feather-instagram"></i> </a></li>
+                            <li><a href=""> <i class="icon-brand-youtube"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-lg-offset-1">
+                    <div class="footer-box-menu">
+                       <h4>Our Cars</h4>
+                       <ul>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Exotic Cars </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> SUVs </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Trucks </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Mini Vans </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Moving Trucks </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="footer-box-menu">
+                       <h4>Menu</h4>
+                       <ul>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Home </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> About Us </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Contact </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> All Cars </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Provacy Policy </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-back">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-back-left">  
+                        <h4> © 2019 All Rights Reserved.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-back-right">
+                        <h4>Produced by <a href="http://armcoding.com/" target="blanc">ArmCoding</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTEER END-->
+
+
+
+
+
+
+
+<!-- jQuery -->
+<!--  -------  -->
+
+<script src="js/bootstrap.min.js"></script>
+
+<!--  search car -->
+<script src="js/bootstrap-datepicker.js"></script>
+
+<script src="js/custom.js"></script>
+
+<script src="js/wow.min.js"></script>
+
+<script src="js/RV-gallery.js"></script>
+
+<script src="js/main.js"></script>
+
+
+<!-- <script>
+    new WOW({mobile: false}).init();
+</script> -->
+
+
+</body>
+</html>

@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car|Rental</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Plugin Styles -->
+    <link href="css/datepicker.css" rel="stylesheet">
+
+    <!-- Main Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- ICON -->
+    <link href="icon/css/icons.css" rel="stylesheet">
+
+     <!-- JQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <!-- Google Font Lato -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="260">
+
+  <!-- Header start -->
+<header data-spy="affix" data-offset-top="39" data-offset-bottom="0" class="large">
+
+    <div class="row container box">
+        <div class="col-md-4">
+              <!-- Logo start -->
+            <div class="brand">
+                <h1><a class="scroll-to" href="#"><img class="img-responsive" src="img/logo/logo7.png" alt="logo"></a></h1>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <!-- <div class="pull-right">
+                <div class="header-info pull-right">
+                    <div class="language-switch pull-right">
+                        <div class="dropdown">
+                            <a data-toggle="dropdown" href="index.php.html#" id="language-switch-dropdown">Language </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="language-switch-dropdown">
+                                <li><a href="index.php.html#"><img src="img/lang/united-states1.png" alt="france"> Eng</a></li>
+                                <li><a href="index.php.html#"><img src="img/lang/russia1.png" alt="germany"> Rus</a></li>
+                                <li><a href="index.php.html#"><img src="img/lang/armenia1.png" alt="usa"> Arm</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="clearfix"></div>
+            <!-- start navigation -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand scroll-t" href="#"><img class="img-responsive" src="img/logo/logo7.png" alt="logo"></a>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <!-- Nav-Links start -->
+                        <ul class="nav navbar-nav navbar-right mt-20">
+                            <li class="active"><a href="index.php.html#top" class="scroll-to">Home</a></li>
+                            <li><a href="index.php.html#services" class="scroll-to">About Us</a></li>
+                            <li><a href="index.php.html#vehicles" class="scroll-to">Contact</a></li>
+                            <li><a href="index.php.html#contact" class="scroll-to">All Cars</a></li>
+                            <li><a href="#"onclick="popup()"  class="scroll-to">Login</a></li>
+                        </ul>
+                        <!-- Nav-Links end -->
+                    </div>
+                </div>
+            </nav><!-- end navigation -->
+        </div>
+
+        <div class="login-box">
+            <!-- <a href="#"onclick="popup()">AAA</a> -->
+            <div id="popup_outer">
+                <div class="popup" style="background-image: url(img/bg/reg-bg-2.jpg);">
+                    <div class="close-popup">X</div>
+                    <!-- Tabs Start -->
+                    <div class="reg-box">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Check in</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Login</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                                <h3>CHECK IN</h3>
+                                <!-- Form Start -->
+                                <form class="reg-form">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="text" name="text" required placeholder="Username">
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input type="email" name="email" required placeholder="Email">
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input type="password" name="password" required placeholder="Password">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="password" name="password" required placeholder="Retype password">
+                                        </div>
+                                        <div class="col-md-12 mt-30">
+                                            <div class="center-holder">
+                                                <button type="submit">Send Message</button>
+                                            </div>                      
+                                        </div>
+
+                                    </div>
+                                </form> <!-- Form End -->
+                            </div>
+
+                            <div id="menu1" class="tab-pane fade">
+                                <div id="home" class="tab-pane fade in active">
+                                    <h3>LOGIN</h3>
+                                    <form class="reg-form">   <!-- Form Start -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" name="text" required placeholder="Username">
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <input type="email" name="email" required placeholder="Email">
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <input type="password" name="password" required placeholder="Password">
+                                            </div>
+                                            <div class="col-md-12 mt-30">
+                                                <div class="center-holder">
+                                                    <button type="submit">Send Message</button>
+                                                </div>                      
+                                            </div>
+
+                                        </div>
+                                    </form><!-- Form End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
+                    <!-- Tabs End -->     
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- Header end -->
+
+
+
+
+
+<!-- Teaser start -->
+<section id="teaser" class="teaser-1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7 col-xs-12 pull-right">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides start -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <h1 class="title">We have the best cars $28 day
+                            <span class="subtitle">Treat yourself in USA</span></h1>
+                            <div class="car-img">
+                                <img src="img/car1.png" class="img-responsive" alt="car1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h1 class="title">Get 15% off your rental
+                            <span class="subtitle">Plan your trip now</span></h1>
+                            <div class="car-img">
+                                <img src="img/car2.png" class="img-responsive" alt="car1">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wrapper for slides end -->
+
+                    <!-- Slider Controls start -->
+                    <a class="left carousel-control" href="index.php.html#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="index.php.html#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                    <!-- Slider Controls end -->
+                </div>
+            </div>
+
+
+            <div class="col-md-5 col-xs-12 reservation">
+                <!-- <div class=""> -->
+
+                    <!-- <form action="#" method="post" name="car-select-form" id="car-select-form">
+
+                        <div class="alert alert-danger hidden" id="car-select-form-msg">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <strong>Note:</strong> All fields are required!
+                        </div>
+                        
+                        <div class="styled-select-car">
+                              <select name="car-select" id="car-select">
+                                <option value="">Select your car type</option>
+                                <option value="img/vehicle1.jpg">VW Golf VII</option>
+                                <option value="img/vehicle2.jpg">Audi A1 S-LINE</option>
+                                <option value="img/vehicle3.jpg">Toyota Camry</option>
+                                <option value="img/vehicle4.jpg">BMW 320 ModernLine</option>
+                                <option value="img/vehicle5.jpg">Mercedes-Benz GLK</option>
+                                <option value="img/vehicle6.jpg">VW Passat CC</option>
+                                <option value="img/vehicle6.jpg">BMW M3</option>
+                                <option value="img/vehicle6.jpg">BMW M3</option>
+                                <option value="img/vehicle6.jpg">BMW M3</option>
+                                <option value="img/vehicle6.jpg">BMW M3</option>
+                                <option value="img/vehicle6.jpg">BMW M3</option>
+                            </select>
+                        </div>
+
+                        <div class="location">
+                            <div class="input-group pick-up">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span> Pick-up</span>
+                                <input type="text" name="pick-up-location" id="pick-up-location" class="form-control autocomplete-location" placeholder="Enter a City or Airport">
+                            </div>
+
+                            <a class="different-drop-off" href="index.php.html#">Need a different drop-off location?</a>
+
+                            <div class="input-group drop-off">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span> Drop-off</span>
+                                <input type="text" name="drop-off-location" id="drop-off-location" class="form-control autocomplete-location" placeholder="Enter a City or Airport">
+                            </div>
+                        </div>
+
+                        <div class="datetime pick-up">
+                            <div class="date pull-left">
+                                <div class="input-group">
+                                    <span class="input-group-addon pixelfix"><span class="glyphicon glyphicon-calendar"></span> Pick-up</span>
+                                    <input type="text" readonly="true" name="pick-up-date" id="pick-up-date" class="form-control datepicker" placeholder="mm/dd/yyyy">
+                                </div>
+                            </div>
+                            <div class="time pull-right">
+                                <div class="styled-select-time">
+                                    <select name="pick-up-time" id="pick-up-time">
+                                        <option value="12:00 AM">12:00 AM</option>
+                                        <option value="01:00 AM">01:00 AM</option>
+                                        <option value="02:00 AM">02:00 AM</option>
+                                        <option value="03:00 AM">03:00 AM</option>
+                                        <option value="04:00 AM">04:00 AM</option>
+                                        <option value="05:00 AM">05:00 AM</option>
+                                        <option value="06:00 AM">06:00 AM</option>
+                                        <option value="07:00 AM">07:00 AM</option>
+                                        <option value="08:00 AM">08:00 AM</option>
+                                        <option value="09:00 AM">09:00 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="12:00 PM">12:00 PM</option>
+                                        <option value="01:00 PM">01:00 PM</option>
+                                        <option value="02:00 PM">02:00 PM</option>
+                                        <option value="03:00 PM">03:00 PM</option>
+                                        <option value="04:00 PM">04:00 PM</option>
+                                        <option value="05:00 PM">05:00 PM</option>
+                                        <option value="06:00 PM">06:00 PM</option>
+                                        <option value="07:00 PM">07:00 PM</option>
+                                        <option value="08:00 PM">08:00 PM</option>
+                                        <option value="09:00 PM">09:00 PM</option>
+                                        <option value="10:00 PM">10:00 PM</option>
+                                        <option value="11:00 PM">11:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="datetime drop-off">
+                            <div class="date pull-left">
+                                <div class="input-group">
+                                    <span class="input-group-addon pixelfix"><span class="glyphicon glyphicon-calendar"></span> Drop-off</span>
+                                    <input type="text" readonly="true" name="drop-off-date" id="drop-off-date" class="form-control datepicker" placeholder="mm/dd/yyyy">
+                                </div>
+                            </div>
+                            <div class="time pull-right">
+                                <div class="styled-select-time">
+                                    <select name="drop-off-time" id="drop-off-time">
+                                        <option value="12:00 AM">12:00 AM</option>
+                                        <option value="01:00 AM">01:00 AM</option>
+                                        <option value="02:00 AM">02:00 AM</option>
+                                        <option value="03:00 AM">03:00 AM</option>
+                                        <option value="04:00 AM">04:00 AM</option>
+                                        <option value="05:00 AM">05:00 AM</option>
+                                        <option value="06:00 AM">06:00 AM</option>
+                                        <option value="07:00 AM">07:00 AM</option>
+                                        <option value="08:00 AM">08:00 AM</option>
+                                        <option value="09:00 AM">09:00 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="12:00 PM">12:00 PM</option>
+                                        <option value="01:00 PM">01:00 PM</option>
+                                        <option value="02:00 PM">02:00 PM</option>
+                                        <option value="03:00 PM">03:00 PM</option>
+                                        <option value="04:00 PM">04:00 PM</option>
+                                        <option value="05:00 PM">05:00 PM</option>
+                                        <option value="06:00 PM">06:00 PM</option>
+                                        <option value="07:00 PM">07:00 PM</option>
+                                        <option value="08:00 PM">08:00 PM</option>
+                                        <option value="09:00 PM">09:00 PM</option>
+                                        <option value="10:00 PM">10:00 PM</option>
+                                        <option value="11:00 PM">11:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <input type="submit" class="submit" name="submit" value="continue car reservation" id="checkoutModalLabel">
+                        </div>
+                    </form> -->
+
+                    <div class="home-search-form">
+                        <form action="#" method="post" name="select-form" id="car_add_form">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="select-car-box">
+                                        <h5>Car <span>*</span></h5>
+                                        <select class="js-select required" name="select-form" >
+                                            <option value="">All</option>
+                                            <option value="1">Audi</option>
+                                            <option value="2">BMW</option>
+                                            <option value="3">Ford</option>
+                                            <option value="4">Mercedes-Benz</option>
+                                            <option value="5">Opel</option>
+                                            <option value="6">Volkswagen</option>
+                                            <option value="7">9ff</option>
+                                            <option value="8">Abarth</option>
+                                            <option value="9">AC</option>
+                                            <option value="10">ACM</option>
+                                            <option value="11">Acura</option>
+                                            <option value="12">Aixam</option>
+                                            <option value="13">Alfa Romeo</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <div class="select-car-box">
+                                        <h5>Model <span>*</span></h5>
+                                        <select class="js-select required" name="select-form" >
+                                            <option value="model">All</option>
+                                            <option value="182">114</option>
+                                            <option value="163">116</option>
+                                            <option value="164">118</option>
+                                            <option value="165">120</option>
+                                            <option value="172">123</option>
+                                            <option value="174">125</option>
+                                            <option value="168">130</option>
+                                            <option value="173">135</option>
+                                            <option value="210">140</option>
+                                            <option value="180">1er M Coupé</option>
+                                            <option value="149">2002</option>
+                                            <option value="203">214</option>
+                                            <option value="199">216</option>
+                                            <option value="193">218</option>
+                                            <option value="192">220</option>
+                                            <option value="194">225</option>
+                                            <option value="202">228</option>
+                                            <option value="211">230</option>
+                                            <option value="195">235 </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6 col-12">
+                                    <div class="select-car-box">
+                                        <h5>Starting Price <span>*</span></h5>
+                                        <select class="js-select required" name="select-form" >
+                                            <option value="" selected="">All</option>
+                                            <option value="500">500$</option>
+                                            <option value="1000">1000$</option>
+                                            <option value="1500">1500$</option>
+                                            <option value="2000">2000$</option>
+                                            <option value="2500">2500$</option>
+                                            <option value="3000">3000$</option>
+                                            <option value="3500">3500$</option>
+                                            <option value="4000">4000$</option>
+                                            <option value="5000">5000$</option>
+                                            <option value="6000">6000$</option>
+                                            <option value="7000">7000$</option>
+                                            <option value="8000">8000$</option>
+                                            <option value="9000">9000$</option>
+                                            <option value="10000">10000$</option>
+                                            <option value="12500">12500$</option>
+                                            <option value="15000">15000$</option>
+                                            <option value="17500">17500$</option>
+                                            <option value="20000">20000$</option>
+                                            <option value="25000">25000$</option>
+                                            <option value="30000">30000$</option>
+                                            <option value="40000">40000$</option>
+                                            <option value="50000">50000$</option>
+                                            <option value="60000">60000$</option>
+                                            <option value="70000">70000$</option>
+                                            <option value="80000">80000$</option>
+                                            <option value="90000">90000$</option>
+                                            <option value="100000">100000$</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <div class="select-car-box">
+                                        <h5>Final Price <span>*</span></h5>
+                                        <select class="js-select required" name="select-form" >
+                                            <option value="" selected="">All</option>
+                                            <option value="500">500$</option>
+                                            <option value="1000">1000$</option>
+                                            <option value="1500">1500$</option>
+                                            <option value="2000">2000$</option>
+                                            <option value="2500">2500$</option>
+                                            <option value="3000">3000$</option>
+                                            <option value="3500">3500$</option>
+                                            <option value="4000">4000$</option>
+                                            <option value="5000">5000$</option>
+                                            <option value="6000">6000$</option>
+                                            <option value="7000">7000$</option>
+                                            <option value="8000">8000$</option>
+                                            <option value="9000">9000$</option>
+                                            <option value="10000">10000$</option>
+                                            <option value="12500">12500$</option>
+                                            <option value="15000">15000$</option>
+                                            <option value="17500">17500$</option>
+                                            <option value="20000">20000$</option>
+                                            <option value="25000">25000$</option>
+                                            <option value="30000">30000$</option>
+                                            <option value="40000">40000$</option>
+                                            <option value="50000">50000$</option>
+                                            <option value="60000">60000$</option>
+                                            <option value="70000">70000$</option>
+                                            <option value="80000">80000$</option>
+                                            <option value="90000">90000$</option>
+                                            <option value="100000">100000$</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6 col-12">
+                                    <div class="select-car-box">
+                                        <h5>Starting Year<span>*</span></h5>
+                                        <select class="js-select required" name="select-form" >
+                                            <option value="all" selected="">All</option>
+                                            <option value="2018">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2000">2000</option>
+                                            <option value="1999">1999</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1990">1990</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1980">1980</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-12">
+                                    <div class="select-car-box">
+                                        <h5>Ending Year<span>*</span></h5>
+                                        <select class="js-select required" name="select-form" >
+                                            <option value="all" selected="">All</option>
+                                            <option value="2018">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2000">2000</option>
+                                            <option value="1999">1999</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1990">1990</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1980">1980</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <input type="submit" class="submit" name="submit" value="continue car reservation" id="checkoutModalLabel">
+                            
+                            </div>
+                        </form>
+                    </div>
+
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="arrow-down"></div>
+<!-- Teaser end -->
+
+
+
+
+
+
+
+
+
+<div class="section-block">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <a href="single-save.html"><div class="cars-box">
+                    <div class="box-car-img" style="background-image: url(img/cars/vehicle5.jpg);">
+                        <!-- <img src="img/cars/vehicle5.jpg"> -->
+                    </div>
+                    <div class="row mt-20 model-box">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="car-model">
+                                <h4><span>2018</span> Mercedes benz e320 </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="car-price">
+                                <h4>$25</h4>
+                                <h5>Per day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="car-host-img">
+                                <img src="img/ico/icon-4.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="car-host-name">
+                                <h4>My DFW Rentals - Luxury Rentals</h4>
+                                <ul>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>    
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <a href="#"><div class="cars-box">
+                    <div class="box-car-img" style="background-image: url(img/cars/vehicle3.jpg);">
+                        <!-- <img src="img/car2.png"> -->
+                    </div>
+                    <div class="row mt-20 model-box">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="car-model">
+                                <h4><span>2018</span> Mercedes benz e320 </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="car-price">
+                                <h4>$25</h4>
+                                <h5>Per day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="car-host-img">
+                                <img src="img/ico/icon-4.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="car-host-name">
+                                <h4>My DFW Rentals - Luxury Rentals</h4>
+                                <ul>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>    
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <a href="#"><div class="cars-box">
+                    <div class="box-car-img" style="background-image: url(img/cars/vehicle2.jpg);">
+                        <!-- <img src="img/car2.png"> -->
+                    </div>
+                    <div class="row mt-20 model-box">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="car-model">
+                                <h4><span>2018</span> Mercedes benz e320 </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="car-price">
+                                <h4>$25</h4>
+                                <h5>Per day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="car-host-img">
+                                <img src="img/ico/icon-4.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="car-host-name">
+                                <h4>My DFW Rentals - Luxury Rentals</h4>
+                                <ul>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>    
+            </div>
+
+            <!-- col----2  -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <a href="single-save.html"><div class="cars-box">
+                    <div class="box-car-img" style="background-image: url(img/cars/vehicle5.jpg);">
+                        <!-- <img src="img/cars/vehicle5.jpg"> -->
+                    </div>
+                    <div class="row mt-20 model-box">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="car-model">
+                                <h4><span>2018</span> Mercedes benz e320 </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="car-price">
+                                <h4>$25</h4>
+                                <h5>Per day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="car-host-img">
+                                <img src="img/ico/icon-4.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="car-host-name">
+                                <h4>My DFW Rentals - Luxury Rentals</h4>
+                                <ul>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>    
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <a href="#"><div class="cars-box">
+                    <div class="box-car-img" style="background-image: url(img/cars/vehicle3.jpg);">
+                        <!-- <img src="img/car2.png"> -->
+                    </div>
+                    <div class="row mt-20 model-box">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="car-model">
+                                <h4><span>2018</span> Mercedes benz e320 </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="car-price">
+                                <h4>$25</h4>
+                                <h5>Per day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="car-host-img">
+                                <img src="img/ico/icon-4.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="car-host-name">
+                                <h4>My DFW Rentals - Luxury Rentals</h4>
+                                <ul>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>    
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <a href="#"><div class="cars-box">
+                    <div class="box-car-img" style="background-image: url(img/cars/vehicle2.jpg);">
+                        <!-- <img src="img/car2.png"> -->
+                    </div>
+                    <div class="row mt-20 model-box">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="car-model">
+                                <h4><span>2018</span> Mercedes benz e320 </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="car-price">
+                                <h4>$25</h4>
+                                <h5>Per day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="car-host-img">
+                                <img src="img/ico/icon-4.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="car-host-name">
+                                <h4>My DFW Rentals - Luxury Rentals</h4>
+                                <ul>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>    
+            </div>
+
+            <!-- col----3  -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <a href="single-save.html"><div class="cars-box">
+                    <div class="box-car-img" style="background-image: url(img/cars/vehicle5.jpg);">
+                        <!-- <img src="img/cars/vehicle5.jpg"> -->
+                    </div>
+                    <div class="row mt-20 model-box">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="car-model">
+                                <h4><span>2018</span> Mercedes benz e320 </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="car-price">
+                                <h4>$25</h4>
+                                <h5>Per day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="car-host-img">
+                                <img src="img/ico/icon-4.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="car-host-name">
+                                <h4>My DFW Rentals - Luxury Rentals</h4>
+                                <ul>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>    
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <a href="#"><div class="cars-box">
+                    <div class="box-car-img" style="background-image: url(img/cars/vehicle3.jpg);">
+                        <!-- <img src="img/car2.png"> -->
+                    </div>
+                    <div class="row mt-20 model-box">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="car-model">
+                                <h4><span>2018</span> Mercedes benz e320 </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="car-price">
+                                <h4>$25</h4>
+                                <h5>Per day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="car-host-img">
+                                <img src="img/ico/icon-4.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="car-host-name">
+                                <h4>My DFW Rentals - Luxury Rentals</h4>
+                                <ul>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>    
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">   
+                <a href="#"><div class="cars-box">
+                    <div class="box-car-img" style="background-image: url(img/cars/vehicle2.jpg);">
+                        <!-- <img src="img/car2.png"> -->
+                    </div>
+                    <div class="row mt-20 model-box">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="car-model">
+                                <h4><span>2018</span> Mercedes benz e320 </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="car-price">
+                                <h4>$25</h4>
+                                <h5>Per day</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-20">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="car-host-img">
+                                <img src="img/ico/icon-4.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="car-host-name">
+                                <h4>My DFW Rentals - Luxury Rentals</h4>
+                                <ul>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                    <li><i class="icon-material-outline-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div></a>    
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- --------- ACCARDION ---------- -->
+
+<div class="section-block" style="background: #f9f9f9;">
+    <div class="container">
+        <div class="accordion-header">
+            <div class="section-heading-line"></div>
+            <h3>How It Works</h3>
+            <div class="section-heading-line"></div>
+        </div>
+
+        <div class="row mt-50">
+            <!-- RENT A CAR -->
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="rent">
+                    <h4 class="info-ab-system">RENT A CAR</h4>
+                    <div class="section-heading-line-2"></div>
+
+                    <section class="card">
+                        <article>
+                            <h1 data-accordion-element-trigger>Sign Up</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis..</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Find Your Car</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Submit Applications</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Meet The Owner</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Time To Earn Some Cash</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Sign Up</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis..</p>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+                
+            <!-- LIST YOUR CAR -->
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="list">
+                    <h4 class="info-ab-system">LIST YOUR CAR</h4>
+                    <div class="section-heading-line-2"></div>
+                    <section class="card">
+                        <article>
+                            <h1 data-accordion-element-trigger>Sign Up</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Respond To Driver Requests</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Verify Documents</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Hand Off The Keys</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Get Paid</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h1 data-accordion-element-trigger>Respond To Driver Requests</h1>
+                            <div data-accordion-element-content class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus quis mauris malesuada fringilla. Praesent non tellus massa. Phasellus at neque et massa elementum sodales. Quisque neque enim, dignissim at molestie quis, lobortis eu elit. Sed ornare ultrices tortor sed mollis. Pellentesque blandit quam imperdiet lorem lobortis, at pharetra massa condimentum. Maecenas ac nibh mi. Donec suscipit dolor vitae faucibus venenatis.</p>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------- ACCARDION END ---------- --> 
+
+
+
+
+
+<div class="section-block-bg-paralax" style="background-image: url('img/bg/car-0044.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contact-info-box">
+                    <h3>Need a Quick Query ?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                    <div class="contact-info">
+                        <i class="icon-feather-phone-call"></i>
+                        <h4>Direct line numbers</h4>
+                        <h5>+11 (0) 123 456 7890 / +11 (0) 123 456 7890</h5>
+                    </div>
+                    <div class="contact-info">
+                        <i class="icon-material-outline-email"></i>
+                        <h4>Our Email</h4>
+                        <h5>specthemes@gmail.com / example@mail.com</h5>
+                    </div>
+                    <div class="contact-info">
+                        <i class="icon-feather-map-pin"></i>
+                        <h4>Our Locations</h4>
+                        <h5>New York, NY Sheram 113 / London England Sheram</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="contact-form-box">
+                    <h4>Make a request now.</h4>
+                    <div class="section-heading-line"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+
+                    <form class="primary-form mt-40">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-12 pl-0">
+                                <input type="text" name="name" placeholder="Name*">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12 pr-0">
+                                <input type="text" name="phone" placeholder="Phone Number*">
+                            </div>
+                            <div class="col-12">
+                                 <input type="text" name="submit" placeholder="Submit*">
+                            </div>
+                            <div class="col-12">
+                                <textarea placeholder="Message*" name="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center mt-20">
+                            <button type="submit" class="button-md button-primary text-uppercase ml-0">Request a call back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTEER -->
+
+<div class="section-block-bg" style="background-image: url('img/bg/footer-bg-2.png')">
+    <div class="container">
+        <div class="row mb-50 mt-50">
+            <div class="    ">
+
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="footer-box-about">
+                        <img src="img/logo/logoo2.png">
+                        <div class="footer-about">
+                            <h4>About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <ul>
+                            <li><a href=""> <i class="icon-brand-facebook-square"></i> </a></li>
+                            <li><a href=""> <i class="icon-feather-instagram"></i> </a></li>
+                            <li><a href=""> <i class="icon-brand-youtube"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-lg-offset-1">
+                    <div class="footer-box-menu">
+                       <h4>Our Cars</h4>
+                       <ul>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Exotic Cars </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> SUVs </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Trucks </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Mini Vans </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Moving Trucks </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="footer-box-menu">
+                       <h4>Menu</h4>
+                       <ul>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Home </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> About Us </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Contact </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> All Cars </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Provacy Policy </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-back">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-back-left">  
+                        <h4> © 2019 All Rights Reserved.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-back-right">
+                        <h4>Produced by <a href="http://armcoding.com/" target="blanc">ArmCoding</a></h4>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTEER END-->
+
+
+
+<!-- jQuery -->
+<!--  -------  -->
+<script src="js/bootstrap.min.js"></script>
+
+<!--  search car -->
+<script src="js/bootstrap-datepicker.js"></script>
+
+<script src="js/custom.js"></script>
+
+<script src="js/wow.min.js"></script>
+
+<script src="js/RV-gallery.js"></script>
+
+<script src="js/main.js"></script>
+
+
+<!-- <script>
+    new WOW({mobile: false}).init();
+</script> -->
+
+
+</body>
+</html>

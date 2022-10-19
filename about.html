@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car|Rental</title>
+
+        <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap -->
+    <link href="css/animate.css" rel="stylesheet">
+
+        <!-- Plugin Styles -->
+    <link href="css/datepicker.css" rel="stylesheet">
+
+    <link href="css/select2.css" rel="stylesheet">
+
+        <!-- Main Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+
+        <!-- SLIDER CSS -->
+    <!-- <link href="css/RV-gallery.css" rel="stylesheet"> -->
+
+        <!-- ICON -->
+    <link href="icon/css/icons.css" rel="stylesheet">
+    
+        <!-- Google Font Lato -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!-- font for icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+        <!-- JQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <!-- for select -->
+     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+</head>
+<!-- <body id="top" data-spy="scroll" data-target=".navbar" data-offset="260"> -->
+
+  <!-- Header start -->
+<header data-spy="affix" data-offset-top="39" data-offset-bottom="0" class="large">
+
+    <div class="row container box">
+        <div class="col-md-4">
+              <!-- Logo start -->
+            <div class="brand">
+                <h1><a class="scroll-to" href="#"><img class="img-responsive" src="img/logo/logo7.png" alt="logo"></a></h1>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <!-- <div class="pull-right">
+                <div class="header-info pull-right">
+                    <div class="language-switch pull-right">
+                        <div class="dropdown">
+                            <a data-toggle="dropdown" href="index.php.html#" id="language-switch-dropdown">Language </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="language-switch-dropdown">
+                                <li><a href="index.php.html#"><img src="img/lang/united-states1.png" alt="france"> Eng</a></li>
+                                <li><a href="index.php.html#"><img src="img/lang/russia1.png" alt="germany"> Rus</a></li>
+                                <li><a href="index.php.html#"><img src="img/lang/armenia1.png" alt="usa"> Arm</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="clearfix"></div>
+            <!-- start navigation -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand scroll-t" href="#"><img class="img-responsive" src="img/logo/logo7.png" alt="logo"></a>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <!-- Nav-Links start -->
+                        <ul class="nav navbar-nav navbar-right mt-20">
+                            <li><a href="index.php.html#top" class="scroll-to">Home</a></li>
+                            <li class="active"><a href="index.php.html#services" class="scroll-to">About Us</a></li>
+                            <!-- <li><a href="index.php.html#vehicles" class="scroll-to">Contact</a></li> -->
+                            <li><a href="index.php.html#contact" class="scroll-to">All Cars</a></li>
+                            <li><a href="#"onclick="popup()"  class="scroll-to">Login</a></li>
+                        </ul>
+                        <!-- Nav-Links end -->
+                    </div>
+                </div>
+            </nav><!-- end navigation -->
+        </div>
+
+        <div class="login-box">
+            <!-- <a href="#"onclick="popup()">AAA</a> -->
+            <div id="popup_outer">
+                <div class="popup" style="background-image: url(img/bg/reg-bg-2.jpg);">
+                    <div class="close-popup">X</div>
+                    <!-- Tabs Start -->
+                    <div class="reg-box">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Check in</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Login</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                                <h3>CHECK IN</h3>
+                                <!-- Form Start -->
+                                <form class="reg-form">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="text" name="text" required placeholder="Username">
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input type="email" name="email" required placeholder="Email">
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <input type="password" name="password" required placeholder="Password">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="password" name="password" required placeholder="Retype password">
+                                        </div>
+                                        <div class="col-md-12 mt-30">
+                                            <div class="center-holder">
+                                                <button type="submit">Send Message</button>
+                                            </div>                      
+                                        </div>
+
+                                    </div>
+                                </form> <!-- Form End -->
+                            </div>
+
+                            <div id="menu1" class="tab-pane fade">
+                                <div id="home" class="tab-pane fade in active">
+                                    <h3>LOGIN</h3>
+                                    <form class="reg-form">   <!-- Form Start -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" name="text" required placeholder="Username">
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <input type="email" name="email" required placeholder="Email">
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <input type="password" name="password" required placeholder="Password">
+                                            </div>
+                                            <div class="col-md-12 mt-30">
+                                                <div class="center-holder">
+                                                    <button type="submit">Send Message</button>
+                                                </div>                      
+                                            </div>
+
+                                        </div>
+                                    </form><!-- Form End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
+                    <!-- Tabs End -->     
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- Header end -->
+
+
+
+<!-- TOP HEADER -->
+
+<!-- <div class="top-header">
+    <div class="header-img" style="background-image: url(img/bg/car-0023.jpg); ">
+        <h1>About Us</h1>
+        <div class="header-img-text-line"></div>
+    </div>
+</div>   -->
+
+
+<div class="bg-box" style="background-image: url(img/bg/about-bg-3.jpg); ">
+    <div class="section-block">
+
+        <div class="top-header-about">
+            <h1>About Us</h1>
+        </div>  
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-10 col-12 col-lg-offset-1 ">
+                    <div class="car-about-box">
+                    
+                        <p>Looking for a rental car? U don’t know whom to address?  Because it's a highly competitive market?  Isn't seems to be easy to find the right company which will not offer an unpleasant experience for you and your traveling companions.</p>
+                        <p> However, the company Rental Car provides a guaranteed service to customers looking for a car rental in the USA by offering unbeatable rates, discounts and excellent customer service assistance.</p>
+
+                        <p>Whether it is for pleasure or business, you can find a vehicle that fits your necessities anywhere within the fifty states, always having the support from any of the major rental. Our customers broadly recognize us because we guarantee an enjoyable experience and some of the most affordable prices; we manage simple requirements to rent and the entire process is quick and easy.</p>
+                        <p>In order to provide customers with safety and peace of mind, Rental Car strives to improve quality in three major areas. </p>
+
+                        <ul>
+                        <li>Vehicle Quality</li>
+                        <li> Customer Service Quality</li>
+                        <li>Rental Location Quality </li>
+                        </ul>
+
+                        <p>More than just rental cars, we provide customers with a variety of services for satisfaction and peace of mind. Whenever and wherever we operate, appreciation for our customers always comes first. We not only strive to promote vehicle rentals but also to create added value. We engage in a variety of other initiatives as well. As a company dealing in automobiles, the environment always remains a crucial concern. However, we will not rest on these laurels. Our sincere wish, moving forward, is to continue to serve the community, as a company that is friendly to both people and the environment. </p>
+
+                        <p>Renting a car in United States was never this easy; just contact one of our agents and we will provide all the information you may need to select a car and take the best available rate. Our allied agencies have extensive and diverse vehicle fleets, so you can choose the category that best fulfills your expectations regarding passenger capacity, type of vehicle and budget.</p>
+
+                        <p>Contact us today, get a quote and make your reservation right away to enjoy the incredible options we have available for you today. Rental Car relies on the support of its customers. We look forward to your business.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+   
+
+
+<!-- FOOTEER -->
+
+<div class="section-block-bg" style="background-image: url('img/bg/footer-bg-2.png')">
+    <div class="container">
+        <div class="row mb-50 mt-50">
+            <div class="footer-box">
+
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="footer-box-about">
+                        <img src="img/logo/logoo2.png">
+                        <div class="footer-about">
+                            <h4>About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <ul>
+                            <li><a href=""> <i class="icon-brand-facebook-square"></i> </a></li>
+                            <li><a href=""> <i class="icon-feather-instagram"></i> </a></li>
+                            <li><a href=""> <i class="icon-brand-youtube"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-lg-offset-1">
+                    <div class="footer-box-menu">
+                       <h4>Our Cars</h4>
+                       <ul>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Exotic Cars </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> SUVs </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Trucks </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Mini Vans </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Moving Trucks </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="footer-box-menu">
+                       <h4>Menu</h4>
+                       <ul>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Home </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> About Us </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Contact </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> All Cars </a></li>
+                            <li><a href="#"> <i class="icon-feather-arrow-right-circle"></i> Provacy Policy </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-back">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-back-left">  
+                        <h4> © 2019 All Rights Reserved.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-back-right">
+                        <h4>Produced by <a href="http://armcoding.com/" target="blanc">ArmCoding</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTEER END-->
+
+
+
+
+
+
+
+<!-- jQuery -->
+<!--  -------  -->
+
+<script src="js/bootstrap.min.js"></script>
+
+<!--  search car -->
+<script src="js/bootstrap-datepicker.js"></script>
+
+<script src="js/custom.js"></script>
+
+<script src="js/wow.min.js"></script>
+
+<script src="js/RV-gallery.js"></script>
+
+<script src="js/main.js"></script>
+
+
+<!-- <script>
+    new WOW({mobile: false}).init();
+</script> -->
+
+
+</body>
+</html>
